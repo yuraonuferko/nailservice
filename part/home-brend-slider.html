@@ -1,0 +1,70 @@
+<div class="row brend-line">
+    <div class="col-md-offset-2 col-md-8 control-line">
+        <h1>POPULAR BRANDS</h1>
+
+    </div>
+    <div class="col-md-1 control-line-control" >
+
+        <a class="left carousel-control" href="#myCarousel1" data-slide="prev" href="#"><span>&#10094;</span></a>
+        <a class="right carousel-control" href="#myCarousel1" data-slide="next"  href="#"><span>&#10095;</span></a>
+    </div>
+</div>
+<div class="row">
+
+    <div class="col-md-offset-2 col-md-8 col-md-offset-2">
+        <div class="carousel slide" data-ride="carousel" data-type="multi" data-interval="3000" id="myCarousel1">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand1.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand2.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand3.jpg"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand4.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand5.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand6.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand7.jpg" class="img-responsive"></a></div>
+                </div>
+                <div class="item">
+                    <div class="col-md-3 col-sm-6 col-xs-12"><a href="#"><img src="images/nail/brand1.jpg" class="img-responsive"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+
+        $('.carousel[data-type="multi"] .item').each(function(){
+            var next = $(this).next();
+            if (!next.length) {
+                next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i=0;i<2;i++) {
+                next=next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+            }
+        });
+
+</script>

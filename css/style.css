@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+html {
+    width: 100%;
+}
+body {
+    width: 100%;
+    margin: auto;
+}
+.container {
+    width: 100%;
+}
+#header-bottom {
+    margin-top: 10px;
+}
+#header_top {
+    background-color: black;
+    color: white;
+    font-size:14px ;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+
+}
+
+.top-block-left ul {
+    color: purple;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: center;
+    line-height: 1.5;
+
+}
+#logo {
+    display: inline-block;
+    text-align: center;
+}
+#download {
+    text-align: center;
+    margin-top: 10px;
+}
+/* menu*/
+#nav7, #nav7 ul, #nav7 li {
+    margin: 0;
+    padding: 0;
+
+}
+
+#nav7 { /* подменю перемещается относительно меню */
+    position: relative;
+    display: table;
+
+    height: 40px;
+    margin: auto;
+
+
+}
+#nav7 ul { /* подменю находится вне потока */
+    position: absolute;
+    z-index: 5;
+    display: none;
+    font-family: Raleway,sans-serif;
+
+}
+#nav7 li:hover ul { /* подменю будет показано, если курсор наведён на пункт меню с выпадающем списком */
+    display: block;
+    background-color: white;
+    line-height: 2;
+    font-family: Raleway,sans-serif;
+    font-size: 0.9em;
+    width: 185px;
+    font-weight: 500;
+
+}
+#nav7 li:hover ul li a{
+    color: purple;
+
+}
+#nav7 li a{
+    font-family: Raleway,sans-serif;
+}
+#nav7 li {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 185px;
+
+
+    }
+#nav7 ul li {
+    display: block;
+    text-align: left;
+}
+
+#nav7 a {
+    display: inline-block;
+    padding: 3px 0;
+    color: #fff;
+    text-decoration: none;
+}
+#nav7 ul a {
+    padding: 3px 15px;
+}
+
+#nav7 li:hover {
+    background: mediumpurple;
+
+}
+
+.mymenu {
+    background: purple;
+    margin-top: 10px
+}
+.glyphicon-align-left {
+    font-size: 1.2em;
+    padding-right: 10px;
+    color:white;
+
+}
+.fa-angle-down {
+    margin-left: 10px;
+}
+#footer-search {
+
+    background-color: purple;
+    margin-top: 50px;
+    color: white;
+    font-size: 20px;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#search-form {
+
+    color:black;
+    margin-top: 2px;
+
+}
+.sign-up {
+
+    font-family: Raleway,sans-serif;
+    display: inline-block;
+    margin-top: 4px;
+}
+.social-icons-item {
+    display: inline-block;
+    border-color: white;
+    border:solid;
+    width: 35px;
+    height: 35px;
+    padding-top: 5px;
+    border-radius: 20px;
+
+}
+.social-icons a {
+    margin-left: -3px;
+}
+
+
+.social-icons a[href='https://facebook.com']{
+    margin-left: -2px;
+}
+
+
+.social-icons a i {
+    margin-left: 10px;
+    color:white;
+    margin-top: 5px;
+    display: inline;
+    border-width: thin;
+    border-color: white;
+
+}
+
+.fa-facebook:hover {
+    color: mediumpurple;
+ }
+.fa-google-plus-square:hover {
+    color: mediumpurple;
+ }
+.fa-youtube:hover {
+    color: mediumpurple;
+ }
+.fa-instagram:hover {
+    color: mediumpurple;
+ }
+.footer-end {
+    margin-top: 30px;
+    line-height: 1.5;
+}
+.footer-end a{
+   text-decoration: none;
+    color: black;
+}
+.footer-end a:hover{
+   text-decoration: none;
+    font-weight: 800;
+}
+.footer-end h4 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.footer-logo img{
+    width: auto;
+    height: auto;
+}
+.footer-logo {
+    float: left;
+}
+.footer-logo i {
+    color: purple;
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.copyright {
+    margin-top: 40px;
+    font-size: 12px;
+
+}
+.copyright span {
+    color: orange;
+}
+.footer-inform {
+    border-left: 1px solid lightgrey ;
+    margin-left: 2%;
+    margin-right: 2%;
+    float:left;
+}
+.footer-categor {
+    border-left: 1px solid lightgrey ;
+    margin-right: 2%;
+    float:left;
+}
+
+.footer-brend {
+    border-left: 1px solid lightgrey ;
+    border-right: 1px solid lightgrey ;
+    width: calc(7% + 40px);
+    float: left;
+    margin-right:0.25%;
+}
+.footer-account {
+    margin-left: 0.25%;
+}
+@media screen and (min-width: 1200px) {
+
+    .copyright {
+
+    }
+}
+.slider img {
+    /*float:left;*/
+    margin-left: -15px;
+
+
+}
+.slider-home {
+    margin-top: 20px;
+}
+.two-colum--bootom-right {
+    margin-left: 2.5%;
+}
+.one-colum-bootom-left {
+    margin-left: -1%;
+    margin-right: 0.8%;
+}
+.one-column-bottom {
+    margin-top: 1%;
+}
+/*Slider*/
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.w3-display-bottommiddle{
+    position:absolute;
+    left:50%;bottom:0;
+    transform:translate(-50%,0%);
+    -ms-transform:translate(-50%,0%)
+}
+
+.w3-left  {
+float: left;
+    margin-left: 6%;
+}
+.w3-right:hover{
+    color: dimgray;
+}
+.w3-right {
+    float: right;
+    margin-right: 6%;
+    font-size: 36px;
+}
+.w3-left:hover{
+    color: dimgray;
+}
+.w3-display-bottommiddle {
+    margin-top: -25%;
+    position: relative;
+    font-size: 36px;
+}
+.w3-badge{
+    background-color:#000;
+    color:#fff;display:inline-block;
+    padding-left:8px;padding-right:8px;
+    text-align:center;
+
+    border-radius:50%
+
+}
+.w3-border-0{border:0!important}
+.w3-border{border:1px solid #ccc!important}
+.w3-transparent {
+    background-color:transparent!important;
+}
+.w3-white,.w3-hover-white:hover{
+    color:#000!important;
+    background-color:#fff!important}
+.indicator span {
+    z-index: 10;
+    margin-top: 20%;
+
+}
+div.indicator {
+    margin-left: 50%;
+    margin-top: 10%;
+}
+.control-line h1 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    font-family: Raleway,sans-serif
+}
+.control-line h1:before,
+.control-line h1:before,
+.control-line h1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.control-line h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.control-line h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.control-line h1:before,
+.control-line h1:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+div.control-line-control {
+   margin-left: -0.4%;
+    margin-top: 20px;
+    float: left;
+    font-size: 20px;
+    background-image: none;
+    background-color: transparent;
+    text-shadow: none;
+    width: 10px;
+}
+div.control-line-control a {
+    background-image: none;
+    background-color: transparent;
+    text-shadow: none;
+
+}
+div.control-line-control a span{
+   color:black;
+    text-decoration: none;
+    background-image: none;
+    background: none;
+    text-shadow: none;
+
+}
+div.control-line {
+   margin-top: 18px;
+
+}
+
+.carousel-control {
+    background-image: none;
+    background-color: transparent;
+    text-shadow: none;
+}
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-control.right {
+    background-image: none;
+
+}
+#myCarousel img {
+   /* width: 170px;
+    height: 170px;*/
+}
+div#myCarousel  {
+   /* width: 170px;
+    height: 170px;*/
+
+}
+.well {
+    margin-top: 15px;
+}
+/*brend slider*/
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -100%; }
+    .carousel-inner .next        { left:  100%; }
+    .carousel-inner .prev		 { left: -100%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev		 { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+    .active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .carousel-inner .active.left { left: -25%; }
+    .carousel-inner .next        { left:  25%; }
+    .carousel-inner .prev		 { left: -25%; }
+}
+
+a[data-slide="prev"] {
+    color: black;
+}
+a[data-slide="next"] {
+    color: black;
+}a[data-slide="prev"]:hover {
+    color: black;
+}
+a[data-slide="next"]:hover {
+    color: black;
+}
+.brend-line {
+    margin-top: 20px;
+}
+.reklam-block {
+    margin-top: 20px;
+}
+.reklama-left {
+padding-left: 50px;
+
+}.reklama-right {
+
+}
+ .about {
+     margin-top: 20px;
+ }
+ .about-text {
+     margin-top: 20px;
+ }
